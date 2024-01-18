@@ -20,7 +20,7 @@ const app = express();
 //middelwares
 app.use(cors (
   {
-  origin: ["https://mithaicart-frontend.vercel.app"],
+  origin: ["https://mithaicart-frontend-mlpmzig20-harishkumarmeena.vercel.app"],
   methods: [POST, GET],
   credentials: true,
 }));
