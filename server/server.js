@@ -18,12 +18,16 @@ connectDB();
 const app = express();
 
 //middelwares
-app.use(cors (
-  {
-  origin: ["https://mithaicart-frontend-mlpmzig20-harishkumarmeena.vercel.app"],
-  methods: [POST, GET],
-  credentials: true,
-}));
+// allow access from all origin
+
+app.use (cors ());
+
+// app.use(cors (
+//   {
+//   origin: ["https://mithaicart-api.vercel.app"],
+//   methods: [POST, GET],
+//   credentials: true,
+// }));
 app.use(express.json());
 app.use(morgan("dev"));
 
