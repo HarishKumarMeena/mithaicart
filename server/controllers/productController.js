@@ -9,6 +9,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+console.log(process.env.BRAINTREE_PUBLIC_KEY);
+
 //payment gateway
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
